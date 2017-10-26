@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-aop/spring-aop.iml" filepath="$PROJECT_DIR$/spring-aop/spring-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-beans/spring-beans.iml" filepath="$PROJECT_DIR$/spring-beans/spring-beans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-beans-groovy/spring-beans-groovy.iml" filepath="$PROJECT_DIR$/spring-beans-groovy/spring-beans-groovy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-context/spring-context.iml" filepath="$PROJECT_DIR$/spring-context/spring-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-core/spring-core.iml" filepath="$PROJECT_DIR$/spring-core/spring-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-expression/spring-expression.iml" filepath="$PROJECT_DIR$/spring-expression/spring-expression.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-instrument/spring-instrument.iml" filepath="$PROJECT_DIR$/spring-instrument/spring-instrument.iml" />
+    </modules>
+  </component>
+</project>
