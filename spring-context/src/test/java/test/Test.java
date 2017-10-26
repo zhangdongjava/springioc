@@ -12,6 +12,5 @@ public class Test {
         FileSystemXmlApplicationContext context;
         context = new FileSystemXmlApplicationContext("classpath:applicationContext.xml");
         context.getBean(DemoTest.class).print();
-     aaaaa
     }
 }
