@@ -659,5 +659,6 @@
     <orderEntry type="module" module-name="spring-expression" />
     <orderEntry type="module" module-name="spring-instrument" />
     <orderEntry type="module" module-name="spring-beans-groovy" />
+    <orderEntry type="library" name="commons-logging-1.2" level="project" />
   </component>
 </module>

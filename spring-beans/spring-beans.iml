@@ -31,7 +31,7 @@
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library name="javax.inject-1.jar">
         <CLASSES>
           <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar" />
@@ -42,7 +42,7 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library name="javax.el-api-2.2.5.jar">
         <CLASSES>
           <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.el/javax.el-api/2.2.5/370140e991eefb212a6d6baedbce585f00ef76e0/javax.el-api-2.2.5.jar" />
@@ -53,7 +53,7 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library name="snakeyaml-1.17.jar">
         <CLASSES>
           <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.17/7a27ea250c5130b2922b86dea63cbb1cc10a660c/snakeyaml-1.17.jar" />
@@ -119,17 +119,6 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library name="commons-logging-1.2.jar">
-        <CLASSES>
-          <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/ecf26c7507d67782a3bbd148d170b31dfad001aa/commons-logging-1.2-sources.jar" />
-        </SOURCES>
-      </library>
-    </orderEntry>
     <orderEntry type="module-library">
       <library name="objenesis-2.1.jar">
         <CLASSES>
@@ -141,7 +130,7 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library name="spring-cglib-repack-3.2.5.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../spring-core/build/libs/spring-cglib-repack-3.2.5.jar!/" />
@@ -150,7 +139,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library name="spring-objenesis-repack-2.6.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../spring-core/build/libs/spring-objenesis-repack-2.6.jar!/" />
@@ -160,5 +149,15 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="spring-core" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="javax.inject-1" level="project" />
   </component>
 </module>
