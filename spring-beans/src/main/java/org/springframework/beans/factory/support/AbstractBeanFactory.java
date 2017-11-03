@@ -302,6 +302,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 						}
 						//缓存 依赖
 						registerDependentBean(dep, beanName);
+						//创建bean
 						getBean(dep);
 					}
 				}
