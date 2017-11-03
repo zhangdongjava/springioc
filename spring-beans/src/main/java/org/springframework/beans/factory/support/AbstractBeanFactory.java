@@ -258,12 +258,15 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		else {
 			// Fail if we're already creating this bean instance:
 			// We're assumably within a circular reference.
+			//不是单例的玄幻依赖 isPrototypeCurrentlyInCreation
 			if (isPrototypeCurrentlyInCreation(beanName)) {
 				throw new BeanCurrentlyInCreationException(beanName);
 			}
 
 			// Check if bean definition exists in this factory.
+
 			BeanFactory parentBeanFactory = getParentBeanFactory();
+			//尝试冲父容器里面获取
 			if (parentBeanFactory != null && !containsBeanDefinition(beanName)) {
 				// Not found -> check parent.
 				String nameToLookup = originalBeanName(name);
@@ -276,7 +279,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 					return parentBeanFactory.getBean(nameToLookup, requiredType);
 				}
 			}
-
+			//如果不仅仅做类型检查这是创建bean 这里要进行记录
 			if (!typeCheckOnly) {
 				markBeanAsCreated(beanName);
 			}
