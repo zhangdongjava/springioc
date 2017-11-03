@@ -308,6 +308,8 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 				}
 
 				// Create bean instance.
+				//创建bean 实例
+				//如果是单例
 				if (mbd.isSingleton()) {
 					sharedInstance = getSingleton(beanName, new ObjectFactory<Object>() {
 						@Override
@@ -326,7 +328,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 					});
 					bean = getObjectForBeanInstance(sharedInstance, name, beanName, mbd);
 				}
-
+				//创建一个新的实例
 				else if (mbd.isPrototype()) {
 					// It's a prototype -> create a new instance.
 					Object prototypeInstance = null;
@@ -341,6 +343,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 				}
 
 				else {
+					//指定的scope上实例化bean
 					String scopeName = mbd.getScope();
 					final Scope scope = this.scopes.get(scopeName);
 					if (scope == null) {
@@ -376,6 +379,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		}
 
 		// Check if required type matches the type of the actual bean instance.
+		//检查需要的类型时候是否符合bean的实际类型
 		if (requiredType != null && bean != null && !requiredType.isAssignableFrom(bean.getClass())) {
 			try {
 				return getTypeConverter().convertIfNecessary(bean, requiredType);
