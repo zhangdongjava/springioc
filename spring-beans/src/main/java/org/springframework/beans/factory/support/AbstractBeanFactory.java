@@ -1642,11 +1642,16 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		}
 		if (object == null) {
 			// Return bean instance from factory.
+			//这里已经明确知道 beanInstance 是FactoryBean类型
 			FactoryBean<?> factory = (FactoryBean<?>) beanInstance;
 			// Caches object obtained from FactoryBean if it is a singleton.
+			//检测beanDefinitonMap中时候存在beanName
 			if (mbd == null && containsBeanDefinition(beanName)) {
+
+				//将存储xml配置的GenericBeanDefinition转化为RootBeanDefinition 如果有父 则包含父	属性
 				mbd = getMergedLocalBeanDefinition(beanName);
 			}
+			//是否是用户定义的 而不是应用程序本身定义的
 			boolean synthetic = (mbd != null && mbd.isSynthetic());
 			object = getObjectFromFactoryBean(factory, beanName, !synthetic);
 		}
