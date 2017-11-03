@@ -184,7 +184,7 @@ public class DefaultSingletonBeanRegistry extends SimpleAliasRegistry implements
 	/**
 	 *
 	 * @param beanName
-	 * @param allowEarlyReference true 设置标识允许早起依赖
+	 * @param allowEarlyReference true 设置标识允许早期依赖
      * @return
      */
 	protected Object getSingleton(String beanName, boolean allowEarlyReference) {
