@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-beans-groovy/spring-beans-groovy.iml" filepath="$PROJECT_DIR$/spring-beans-groovy/spring-beans-groovy.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-context/spring-context.iml" filepath="$PROJECT_DIR$/spring-context/spring-context.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-core/spring-core.iml" filepath="$PROJECT_DIR$/spring-core/spring-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-demo/spring-demo.iml" filepath="$PROJECT_DIR$/spring-demo/spring-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-expression/spring-expression.iml" filepath="$PROJECT_DIR$/spring-expression/spring-expression.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-instrument/spring-instrument.iml" filepath="$PROJECT_DIR$/spring-instrument/spring-instrument.iml" />
     </modules>
