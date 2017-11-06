@@ -145,7 +145,9 @@ class ConstructorResolver {
 				minNrOfArgs = explicitArgs.length;
 			}
 			else {
+				//提取配置文件中配置的参数
 				ConstructorArgumentValues cargs = mbd.getConstructorArgumentValues();
+				//用于解析后承载构造参数的值
 				resolvedValues = new ConstructorArgumentValues();
 				minNrOfArgs = resolveConstructorArguments(beanName, mbd, bw, cargs, resolvedValues);
 			}
