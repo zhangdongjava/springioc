@@ -129,10 +129,11 @@ class ConstructorResolver {
 			}
 			//如果缓存中存在
 			if (argsToResolve != null) {
+				//解析类型 如给定的构造方法是(int,int) 则通过此方法后将("1","1")转化为(1,1)
 				argsToUse = resolvePreparedArguments(beanName, mbd, bw, constructorToUse, argsToResolve);
 			}
 		}
-
+		//没有被缓存
 		if (constructorToUse == null) {
 			// Need to resolve the constructor.
 			boolean autowiring = (chosenCtors != null ||
