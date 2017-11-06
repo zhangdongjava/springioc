@@ -113,6 +113,7 @@ class ConstructorResolver {
 			argsToUse = explicitArgs;
 		}
 		else {
+			//如果getBean方法没有指定方法参数则尝试从配置文件中解析
 			Object[] argsToResolve = null;
 			synchronized (mbd.constructorArgumentLock) {
 				constructorToUse = (Constructor<?>) mbd.resolvedConstructorOrFactoryMethod;
